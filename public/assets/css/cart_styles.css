@@ -1,0 +1,361 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444444;
+}
+
+a {
+  text-decoration: none;
+  color: #6ddccf;
+}
+
+a:hover {
+  color: #94ebcd;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Satisfy", sans-serif;
+}
+
+#header {
+  top: 0px;
+  height: 70px;
+  /* z-index: 997; */
+  /* transition: all 0.5s; */
+  padding: 10px 0;
+  background: rgba(26, 24, 22, 0.85);
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  top: 0;
+  background: rgba(26, 24, 22, 0.85);
+}
+
+#header .logo h1 {
+  font-size: 28px;
+  margin: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+#header .logo h1 a, #header .logo h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+.cart-btn {
+  background: #6ddccf;
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 0 0 20px;
+  padding: 10px 25px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  /* white-space: nowrap; */
+}
+
+.cart-btn:hover {
+  background: #94ebcd;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .cart-btn {
+    margin: 0 15px 0 0;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+  }
+}
+
+.fixed-top {
+  position: static;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  /* white-space: nowrap; */
+  transition: 0.3s;
+}
+
+.navbar a i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover, .navbar .active, .navbar li:hover>a {
+  color: #6ddccf;
+}
+
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: black;
+  transition: 0.3s;
+  z-index: 0;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #433f39;
+}
+
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover>a {
+  color: #6ddccf;
+}
+
+/* #6ddccf; */
+.navbar-mobile .getstarted {
+  margin: 15px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  line-height: 1.5em;
+  /*   background:#E0E4CC; */
+  background: #69d2e7;
+  background: -moz-linear-gradient(-45deg, #69d2e7 0%, #a7dbd8 25%, #e0e4cc 46%, #e0e4cc 54%, #6ddccf 75%, #6ddccf 100%);
+  background: -webkit-linear-gradient(-45deg, #69d2e7 0%, #a7dbd8 25%, #e0e4cc 46%, #e0e4cc 54%, #6ddccf 75%, #6ddccf 100%);
+  background: linear-gradient(135deg, #69d2e7 0%, #a7dbd8 25%, #e0e4cc 46%, #e0e4cc 54%, #6ddccf 75%, #6ddccf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#69d2e7', endColorstr='#6ddccf', GradientType=1);
+}
+
+hr {
+  border: none;
+  background: #E0E4CC;
+  height: 1px;
+  /*   width:60%;
+ display:block;
+ margin-left:0; */
+}
+
+.Cart_Carttotal .container {
+  max-width: 1000px;
+  margin: 1em auto;
+  background: #FFF;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.productcont {
+  display: flex;
+}
+
+.product {
+  padding: 20px;
+  border: 1px solid #E0E4CC;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.cart-container {
+  border: 1px solid #E0E4CC;
+  border-radius: 5px;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.btn, button, input[type="submit"] {
+  border: 1px solid #69D2E7;
+  color: #fff;
+  background: #6ddccf;
+  padding: 0.6em 1em;
+  font-size: 20px;
+  line-height: 1;
+  border-radius: 1.2em;
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.btn:hover, button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+  background: #A7DBD8;
+  border-color: #69D2E7;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn {
+  margin-bottom: 100px;
+}
+
+table {
+  margin-bottom: 1em;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  text-align: left;
+  padding: 0.25em 1em;
+  border-bottom: 1px solid #E0E4CC;
+}
+
+#carttotals {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.cart-buttons {
+  width: auto;
+  margin-right: 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 0;
+}
+
+#emptycart {
+  margin-right: 1em;
+}
+
+table td:nth-last-child(1) {
+  text-align: right;
+}
+
+.message {
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #A7DBD8;
+  color: #679996;
+  padding: 0.5em 0;
+  margin: 1em 0;
+}
+
+#footer {
+  background: #35322d;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #6ddccf;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #46423b;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #6ddccf;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
