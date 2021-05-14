@@ -57,9 +57,9 @@ function updateCartTotal(){
         items = cart.length;
         for (var i = 0; i < items; i++){
             var x = JSON.parse(cart[i]);
-            price = parseFloat(x.price.split('$')[1]);
+            price = parseFloat(x.price.split('Rs. ')[1]);
             productname = x.productname;
-            carttable += "<tr><td>" + productname + "</td><td>$" + price.toFixed(2) + "</td></tr>";
+            carttable += "<tr><td>" + productname + "</td><td>Rs. " + price.toFixed(2) + "</td></tr>";
             total += price;
         }
 
