@@ -1,3 +1,5 @@
+Software engineering project. Made by Priyansh(B19CSE067) and Praneet(B19CSE066).
+
 This is a restaurant/food delivery website. Via this website one can book a table at this restaurant and also has a prospect of delivering food at home.
 
 This website was made using HTML, CSS, bootstrap5, Javascript, Jquery, NodeJs, ExpressJs, MailGun Api
